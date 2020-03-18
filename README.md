@@ -20,10 +20,11 @@ Alternately, you can use/view the project on Heroku [here](#nowhere).
 
 ## Technologies:
 - Travis CI   [![Build Status](https://travis-ci.org/Megscode/acebook_undefined.svg?branch=master)](https://travis-ci.org/Megscode/acebook_undefined)
-- Ruby
-  (incl. postgresql, ActiveRecord, Rails, Bootstrap and Devise gems)
-- Javascript
-  (incl. jQuery)
+- Code Climate & Rubocop gems for code quality
+- Ruby on Rails
+- postgreSQL & ActiveRecord 
+- the Devise gem for user authentication
+ 
 
 ## Collaborators
 * [Barri](https://github.com/BarriF13)
@@ -32,7 +33,6 @@ Alternately, you can use/view the project on Heroku [here](#nowhere).
 * [Megan](https://github.com/Megscode)
 * [Myrtle](https://github.com/Mrtly)
 * [Paulo](https://github.com/Pazoia)
-* [Barri](https://github.com/BarriF13)
 
 ## Project details
 
