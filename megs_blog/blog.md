@@ -1,4 +1,4 @@
-￼￼## A tour of team Undefined's Acebook tools
+## A tour of team Undefined's Acebook tools
 
 Our full stack web app inspired by Facebook, ‘Acebook’, is packed full of user friendly features;
 
@@ -19,7 +19,7 @@ Creating our web-app required a carefully selected mix of tools, technologies an
 * The prerequisites to installing Ruby on Rails on your project are Ruby and SQLite3. 
 * Once you have installed Ruby and SQLite3 you can install rails by running '$ gem install rails’ from the command line. 
 
-<img src="rails-ps.jpg" width="600">
+<img src="images/rails-ps.jpg" width="600">
 
 
 ### Travis
@@ -33,7 +33,7 @@ Creating our web-app required a carefully selected mix of tools, technologies an
 
 Travis looks like this:
 
-<img src="travis-ps.jpg" width="600">
+<img src="images/travis-ps.jpg" width="600">
 
 ### Heroku 
 
@@ -43,7 +43,7 @@ Travis looks like this:
 
 Heroku looks like this: 
 
-<img src="heroku-ps.jpg" width="600">
+<img src="images/heroku-ps.jpg" width="600">
 
 ### Simple-cov
 
@@ -52,11 +52,11 @@ Heroku looks like this:
 * As a team we decided that having an awareness of our code coverage is essential. By installing simple-cov we can see if there are any areas of our code that are poorly tested and therefore may cause problems further down the line. 
 * Simple-cov is implemented into our project by writing to following code in our Gemfile, see below.
 
-<img src="simplecov1-ps.jpg" width="600">
+<img src="images/simplecov1-ps.jpg" width="600">
 
 A simple-cov report: 
 
-<img src="simplecov2-ps.jpg" width="600">
+<img src="images/simplecov2-ps.jpg" width="600">
 
 ### Code Climate
 
@@ -67,7 +67,7 @@ A simple-cov report:
 
 Code Climate looks like this: 
 
-<img src="codeclimate.jpg" width="600">
+<img src="images/codeclimate.jpg" width="600">
 
 ### RuboCop
 
@@ -76,7 +76,7 @@ Code Climate looks like this:
 * The report highlights ‘offences’ that refer to areas of our code that we can improve by implementing a simple syntax change.
 * RuboCop is installed as a gem on our Gemfile. 
 
-<img src="rubocop.jpg" width="600">
+<img src="images/rubocop.jpg" width="600">
 
 
 
