@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
   def new
+    @post = Post.find(params[:format])
     @comment = Comment.new
   end
 

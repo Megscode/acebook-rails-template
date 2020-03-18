@@ -1,8 +1,8 @@
 <%= form_for @comment do |c| %>
-  <% @post_id = 1 %>
+  <% @postid = params[:post_id] %>
   <%= c.label :content %>
   <%= c.text_area :content %>
   <%= c.hidden_field :user_id, :value => current_user.id %>
-  <%= c.hidden_field :post_id, :value => @post_id %>
+  <%= c.hidden_field :post_id, :value => @post.id %>
   <%= c.submit "Submit" %>
 <% end %>
