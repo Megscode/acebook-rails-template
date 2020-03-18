@@ -17,13 +17,18 @@
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
 
-   <div id="menu">
-    <ul id="menu_botton">
-    <li>Sign up</li>
-     <li>Login</li>
-    </ul>
-   </div>
+ 
 
+   <% if user_signed_in? %>
+    <div id="menu">
+    <form class="form-inline">
+    Logged in as <strong> <%= current_user.email %> </strong>
+      <button class="btn btn-outline-success" type="button">Home feed</button>
+      <button class="btn btn-outline-secondary" type="button">  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>   </button>
+    </form>
+    </div>
+
+<% end %>
     <%= yield %>
   </body>
 </html>
