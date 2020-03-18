@@ -37,12 +37,22 @@ Alternately, you can use/view the project on Heroku [here](#nowhere).
 ## Project details
 
 ### User Stories
+
+A user can:
+* [x] sign up with their email address and password
+* [x] sign into the platform
+* [x] create a post, edit and delete it
+* [x] see all the posts in reverse chronological order
+* [x] see who wrote each post and when
+* [ ] ...
+* [ ] ...
 ```
 Under construction...
 ```
 
 ### Wireframes
-Under construction...
+1st wireframe <br>
+<img src="first-wireframe-acebook.png" width="500">
 
 ### Project management
 Trello: [Acebook-on-rails](https://trello.com/b/0B2v6FNT/acebook-on-rails)
