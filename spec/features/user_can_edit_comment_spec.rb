@@ -15,6 +15,7 @@ RSpec.feature "posts list with comments", type: :feature do
     visit "/posts"
     expect(page.all("#posts").first.text).to include("Update comment")
   end
+  
   scenario "User can edit their comment" do
     user_sign_up
 
