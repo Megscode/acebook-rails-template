@@ -1,8 +1,6 @@
 <h2>Your acebook feed</h2>
 
-<div id="newpost">
-<%= link_to new_post_path do %> <h3>new post</h3> <% end %>
-</div>
+ <div id="newpost"><h5><%= link_to new_post_path do %>New post<% end %></h5></div>
 
 <div id="posts">
   <% @posts.each do |post| %>

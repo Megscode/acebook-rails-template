@@ -44,14 +44,16 @@ p{
   overflow: hidden;
   padding-left: 20px;
 }
-#newpost h3 {
+#newpost {
+  display: inline-block
+}
+h5 {
   margin-top: 1em;
   padding: 0.4em 0.8em;
-  display: inline-block;
   box-shadow: 1px 1px 10px grey;
   text-shadow: 1px 1px 10px darkgreen;
   background:  #4A8C6A;
-  color: whitesmoke;
+  a {color: whitesmoke;};
 }
 
 .logins {
@@ -82,8 +84,8 @@ color: whitesmoke
 }
 
 #posts {
+  margin: 0 auto;
   border: 1px solid #364958;
-  display: inline-block;
   padding: 1em 5em;
   width: 50%;
   #post {

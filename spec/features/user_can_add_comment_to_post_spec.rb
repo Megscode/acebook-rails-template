@@ -34,6 +34,6 @@ RSpec.feature "Timeline", type: :feature do
     visit "/posts"
 
     expect(page).to have_content("by testing@test.com")
-    expect(page).to have_content("2020-03-12 00:00:00 UTC")
+    expect(page).to have_content("March 12 2020, 12:00am")
   end
 end
