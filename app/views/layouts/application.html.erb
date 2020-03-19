@@ -28,16 +28,14 @@
 
  
 
-   <% if user_signed_in? %>
-    <div id="menu">
+ <% if user_signed_in? %>
+    <nav class="navbar navbar-light bg-light">
     <form class="form-inline">
     Logged in as <strong> <%= current_user.email %> </strong>
-     <ul id='navigation'>
-      <li class="btn1" type="button">Home</li>
-      <li class="btn2" type="button">  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>   </li>
-      </ul>
+      <button class="btn btn-outline-success" type="button">Home feed</button>
+      <button class="btn btn-outline-secondary" type="button">  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>   </button>
     </form>
-    </div>
+    </nav>
 
 <% end %>
 <div id="container">
