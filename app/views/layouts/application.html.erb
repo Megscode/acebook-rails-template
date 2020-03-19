@@ -5,7 +5,6 @@
 
   <!-- Custom Fonts -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Custom CSS -->
@@ -32,14 +31,15 @@
       <nav class="navbar navbar-light bg-light">
         <div class="container1">
 
-            <a class="navbar-brand" href="#" ><img src="undefined2.jpg"></a>
-        
+            <%# <a class="navbar-brand" href="#" ><img src="undefined2.jpg"></a> %>
+        <h4 id="logostyle">{UNdEFINED}</h4>
 
-          <form class="form-inline">
-          Logged in as <strong> <%= current_user.email %> </strong>
-            <button class="btn btn-outline-success" type="button">Home feed</button>
+        <span id="loggedinas"> Logged in as <span id="email"> <%= current_user.email %> </span></span>
+          
+          <div id="bannerbuttons"><form class="form-inline">
+            <button class="btn btn-outline-success" type="button"><%= link_to posts_path do%> Home feed<% end %></button>
             <button class="btn btn-outline-secondary" type="button">  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>   </button>
-          </form>
+          </form></div>
 
         </div>
       </nav>
