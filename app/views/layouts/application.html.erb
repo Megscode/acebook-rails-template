@@ -18,7 +18,7 @@
   </head>
 
   <body>
-<%# // alert codes for DEVISE %>
+  <!--- alert codes for DEVISE --->
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
     <% end %>
@@ -27,19 +27,20 @@
     <% end %>
 
  
+  <!--- Conditional for Showing the navbar --->
+    <% if user_signed_in? %>
+      <nav class="navbar navbar-light bg-light">
+      <form class="form-inline">
+      Logged in as <strong> <%= current_user.email %> </strong>
+        <button class="btn btn-outline-success" type="button">Home feed</button>
+        <button class="btn btn-outline-secondary" type="button">  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>   </button>
+      </form>
+      </nav>
 
- <% if user_signed_in? %>
-    <nav class="navbar navbar-light bg-light">
-    <form class="form-inline">
-    Logged in as <strong> <%= current_user.email %> </strong>
-      <button class="btn btn-outline-success" type="button">Home feed</button>
-      <button class="btn btn-outline-secondary" type="button">  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>   </button>
-    </form>
-    </nav>
-
-<% end %>
-<div id="container">
+    <% end %>
+  <!--- Container for pages --->
+    <div class="container-fluid" id="container">
     <%= yield %>
-</div>
+    </div>
   </body>
 </html>
