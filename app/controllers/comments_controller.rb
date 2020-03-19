@@ -9,11 +9,6 @@ class CommentsController < ApplicationController
     redirect_to posts_url
   end
 
-  def index
-    @posts = Post.all.order(created_at: :desc)
-    redirect_to posts_path
-  end
-
   # def edit
   #   @comment = Comment.find(params[:id])
   # end
