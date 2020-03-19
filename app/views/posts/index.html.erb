@@ -20,7 +20,8 @@
           <% if comment.post_id == post.id %>
             <p><%= simple_format(comment.content) %></p>
             <p>by <%= comment.user.email %> at <%= comment.created_at%></p>
-            <p><%= link_to "Delete this comment", comment_path(comment), method: :delete, data: {confirm: 'Are you sure?'} %></p>
+            <p><%= link_to "Delete this comment", comment_path(comment), method: :delete, data: {confirm: 'Are you sure?'}%></p>
+            <p><%= link_to "Update comment", edit_comment_path(comment) %></p>
           <% end %>
         </div>
       <% end %>
