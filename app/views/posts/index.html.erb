@@ -3,7 +3,7 @@ welcome to Acebook</h2>
 
 <div id="posts">
   <% @posts.each do |post| %>
-    <p><%= post.message %></p>
+    <p><%= simple_format(post.message) %></p>
     <p>created at <%= post.created_at %></p>
     <p> by <%= post.user.email %></p>
     <p><%= link_to "Edit this post", edit_post_path(post) %></p>
@@ -14,7 +14,7 @@ welcome to Acebook</h2>
     <p><%= link_to "Add comment", new_comment_path(post) %></p>
     <% @comments.each do |comment| %>
       <% if comment.post_id == post.id %>
-        <p><%= comment.content %></p>
+        <p><%= simple_format(comment.content) %></p>
       <% end %>
     <% end %>
   <% end %>
