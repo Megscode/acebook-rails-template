@@ -2,26 +2,27 @@
 welcome to Acebook</h2>
 
 <div id="posts">
+      <p><%= link_to new_post_path do %>New post<% end %></p>
   <% @posts.each do |post| %>
-    <p><%= simple_format(post.message) %></p>
-    <p>created at <%= post.created_at %></p>
-    <p> by <%= post.user.email %></p>
-    <p><%= link_to "Edit this post", edit_post_path(post) %></p>
+    <div id="post">
+      <p><%= simple_format(post.message) %></p>
+      <p>created at <%= post.created_at %></p>
+      <p> by <%= post.user.email %></p>
+      <p><%= link_to "Edit this post", edit_post_path(post) %></p>
+      <p><%= link_to "Delete this post", post_path(post), method: :delete, data: {confirm: 'Are you sure?'}, :class => 'btn btn-outline-danger btn-sm' %></p>
+    </div>
 
-    <%= link_to "Delete this post", post_path(post), 
-    method: :delete, data: {confirm: 'Are you sure?'}, 
-    :class => 'btn btn-outline-danger btn-sm' %>
-    <p><%= link_to "Add comment", new_comment_path(post) %></p>
-    <% @comments.each do |comment| %>
-      <% if comment.post_id == post.id %>
-        <p><%= simple_format(comment.content) %></p>
+    <div id="comments">
+            <p><%= link_to "Add comment", new_comment_path(post) %></p>
+      <% @comments.each do |comment| %>
+        <div id="comment">
+          <% if comment.post_id == post.id %>
+            <p><%= simple_format(comment.content) %></p>
+            <p><%= link_to "Delete this comment", comment_path(comment), method: :delete, data: {confirm: 'Are you sure?'}%></p>
+          <% end %>
+        </div>
       <% end %>
-    <% end %>
-  <% end %>
-</div>
-<div>
-  <%= link_to new_post_path do %>
-  New post
+    </div>
   <% end %>
 </div>
 <br>
