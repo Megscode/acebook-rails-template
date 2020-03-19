@@ -20,10 +20,11 @@ Alternately, you can use/view the project on Heroku [here](#nowhere).
 
 ## Technologies:
 - Travis CI   [![Build Status](https://travis-ci.org/Megscode/acebook_undefined.svg?branch=master)](https://travis-ci.org/Megscode/acebook_undefined)
-- Ruby
-  (incl. postgresql, ActiveRecord, Rails, Bootstrap and Devise gems)
-- Javascript
-  (incl. jQuery)
+- Code Climate & Rubocop gems for code quality
+- Ruby on Rails
+- postgreSQL & ActiveRecord 
+- the Devise gem for user authentication
+ 
 
 ## Collaborators
 * [Barri](https://github.com/BarriF13)
@@ -32,17 +33,26 @@ Alternately, you can use/view the project on Heroku [here](#nowhere).
 * [Megan](https://github.com/Megscode)
 * [Myrtle](https://github.com/Mrtly)
 * [Paulo](https://github.com/Pazoia)
-* [Barri](https://github.com/BarriF13)
 
 ## Project details
 
 ### User Stories
+
+A user can:
+* [x] sign up with their email address and password
+* [x] sign into the platform
+* [x] create a post, edit and delete it
+* [x] see all the posts in reverse chronological order
+* [x] see who wrote each post and when
+* [ ] ...
+* [ ] ...
 ```
 Under construction...
 ```
 
 ### Wireframes
-Under construction...
+1st wireframe <br>
+<img src="first-wireframe-acebook.png" width="500">
 
 ### Project management
 Trello: [Acebook-on-rails](https://trello.com/b/0B2v6FNT/acebook-on-rails)
