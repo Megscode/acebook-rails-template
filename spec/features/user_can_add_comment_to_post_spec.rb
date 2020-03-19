@@ -33,7 +33,7 @@ RSpec.feature "Timeline", type: :feature do
     click_button "Submit"
     visit "/posts"
 
-    expect(page).to have_content("by testing@test.com")
+    expect(page).to have_content("by example@example.com")
     expect(page).to have_content("2020-03-12 00:00:00 UTC")
   end
 end
