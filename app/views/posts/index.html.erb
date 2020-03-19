@@ -1,16 +1,16 @@
-<h2>Hello Megan & Myrtle & Chris & Hansa & Paulo & Barri!! <br><br>
-welcome to Acebook</h2>
-
+<div id ="title">
+<h1>welcome to Undefined Acebook</h1>
+</div>
 <div id="posts">
   <% @posts.each do |post| %>
-    <p><%= post.message %></p>
+    <h3><%= post.message %></h3>
     <p>created at <%= post.created_at %></p>
     <p> by <%= post.user.email %></p>
     <p><%= link_to "Edit this post", edit_post_path(post) %></p>
 
-    <%= link_to "Delete this post", post_path(post), 
+    <p><%= link_to "Delete this post", post_path(post), 
     method: :delete, data: {confirm: 'Are you sure?'}, 
-    :class => 'btn btn-outline-danger btn-sm' %>
+    :class => 'btn btn-outline-danger btn-sm' %></p>
   <% end %>
 </div>
 <div>
@@ -25,4 +25,4 @@ welcome to Acebook</h2>
   <% else %>
     <%= link_to('Login', new_user_session_path) %>  
   <% end %>
-</div>git 
+</div> 

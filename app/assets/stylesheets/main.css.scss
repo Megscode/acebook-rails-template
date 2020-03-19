@@ -19,20 +19,41 @@ body
   
   background-repeat: no-repeat;
   align-items: center;
-  background-color: #f9d302;
+  background-color:rgb(237, 186, 57);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
+  
+}
+h1{
+  color: #0b8a5f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 36px;
 }
 h2{
   color: #0b8a5f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+h3
+{
+  color: #0b8a5f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+p{
+  color: #0a7451;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
 }
 .alert {
   position: fixed;
   bottom: 0;
+  color: #0a7451;
 }
 .notice{
   position: fixed;
-  bottom: 0
+  bottom: 0;
+  color: #0a7451;
 
 }
 .container {
@@ -44,4 +65,24 @@ h2{
   background-image: url('undefined.jpg');
   
 }
+#title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.navbar{
+ 
+  min-height: 50px;
+  background: #f9d302;
+
+}
+.navbar-brand img{
+  
+
+  width: auto;
+ 
+  height: 35px;
+  overflow: hidden;
+  padding-left: 20px;
+}
