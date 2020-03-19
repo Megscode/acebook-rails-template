@@ -19,7 +19,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    if @post.user_id == current_user
+    if @post.user_id == current_user.id
       if @post.created_at > 10.minutes.ago
         if @post.update(post_params)
           redirect_to posts_path, :notice => "Your post has been updated"
