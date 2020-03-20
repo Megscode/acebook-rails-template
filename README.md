@@ -5,7 +5,7 @@
 A clone of a well known posts-based website by team {undefined}. Created as part of Weeks 8 & 9 at [Makers Academy](https://makers.tech/).
 
 ## Usage
-Sign up, sign in and create posts. You will be able to edit and delete your posts (but not ones created by others) using the buttons below each post.
+Sign up, sign in and create posts. Users are able to edit and delete their posts using the buttons below each post. Users can also comment on each other posts, and see who posted or commented.
 
 ## Installation
 First, `git clone` this repository. Then:
@@ -25,6 +25,8 @@ Alternately, you can use/view the project on Heroku [here](#nowhere).
 - postgreSQL & ActiveRecord 
 - the Devise gem for user authentication
  
+ ### A tour of team Undefined's Acebook tools
+[Click here](https://github.com/Megscode/acebook_undefined/blob/master/blog/blog.md)
 
 ## Collaborators
 * [Barri](https://github.com/BarriF13)
