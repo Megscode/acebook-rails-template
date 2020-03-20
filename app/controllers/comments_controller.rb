@@ -16,10 +16,10 @@ class CommentsController < ApplicationController
   def update
     @comment = Comment.find(params[:id])
     if @comment.update(comment_params)
-    redirect_to posts_path, :notice => "Your comment has been updated"
-      else 
-        render "edit"
-      end
+      redirect_to posts_path, :notice => "Your comment has been updated"
+    else 
+      render "edit"
+    end
   end
 
   def destroy
