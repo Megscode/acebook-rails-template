@@ -3,7 +3,7 @@
 Our full stack web app inspired by Facebook, ‘Acebook’, is packed full of user friendly features;
 
 Users can: 
-* sign up, 
+* sign up 
 * log in
 * post
 * comment
@@ -77,3 +77,5 @@ Code Climate looks like this:
 * RuboCop is installed as a gem on our Gemfile. 
 
 <img src="images/rubocop.jpg" width="700">
+
+### [Back to Readme](https://github.com/Megscode/acebook_undefined/blob/master/README.md)
