@@ -47,10 +47,7 @@ A user can:
 * [x] comment on a post
 * [x] edit or delete their comments
 * [x] see who commented & when
-```
-Under construction...
-```
-
+ 
 ### Wireframes
 1st wireframe <br>
 <img src="first-wireframe-acebook.png" width="500">
