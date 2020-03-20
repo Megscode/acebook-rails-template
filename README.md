@@ -25,8 +25,7 @@ Alternately, you can use/view the project on Heroku [here](#nowhere).
 - postgreSQL & ActiveRecord 
 - the Devise gem for user authentication
  
- ### A tour of team Undefined's Acebook tools
-[Click here](https://github.com/Megscode/acebook_undefined/blob/master/blog/blog.md)
+ ### [Click here for A tour of team Undefined's Acebook tools](https://github.com/Megscode/acebook_undefined/blob/master/blog/blog.md)
 
 ## Collaborators
 * [Barri](https://github.com/BarriF13)
