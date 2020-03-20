@@ -9,6 +9,6 @@ RSpec.feature "Can see user name by posts", type: :feature do
     click_button "Submit"
 
     expect(page).to have_content("Hello")
-    expect(page).to have_content("testing@test.com")
+    expect(page).to have_content("example@example.com")
   end
 end

@@ -1,9 +1,7 @@
 require "rails_helper"
 
-RSpec.feature "Timeline", type: :feature do
-  include ActiveSupport::Testing::TimeHelpers
-
-  scenario "Can submit comments and view them" do
+RSpec.feature "posts list with comments", type: :feature do
+  scenario "User can see edit button" do
     user_sign_up
 
     visit "/posts"
@@ -15,13 +13,11 @@ RSpec.feature "Timeline", type: :feature do
     fill_in "Content", with: "Comment on post"
     click_button "Submit"
     visit "/posts"
-
-    expect(page).to have_content("Comment on post")
+    expect(page.all("#posts").first.text).to include("Update comment")
   end
 
-  scenario "Can see who commented and when" do
+  scenario "User can edit their comment" do
     user_sign_up
-    travel_to Time.zone.local(2020, 3, 12, 00, 00, 00)
 
     visit "/posts"
     click_link "New post"
@@ -31,9 +27,12 @@ RSpec.feature "Timeline", type: :feature do
     click_link "Add comment"
     fill_in "Content", with: "Comment on post"
     click_button "Submit"
-    visit "/posts"
 
-    expect(page).to have_content(“by example@example.com”)
-    expect(page).to have_content(“March 12 2020, 12:00am”)  
+    # visit "/posts"
+    click_link "Update comment"
+    fill_in "Content", with: "Bye, sheep!"
+    click_button "Update comment"
+    
+    expect(page.all("#posts").first.text).to include("Bye, sheep!")
   end
 end
