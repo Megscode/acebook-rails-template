@@ -33,7 +33,7 @@ RSpec.feature "Timeline", type: :feature do
     click_button "Submit"
     visit "/posts"
 
-    expect(page).to have_content(“by example@example.com”)
-    expect(page).to have_content(“March 12 2020, 12:00am”)  
+    expect(page).to have_content("by example@example.com")
+    expect(page).to have_content("March 12 2020, 12:00am")  
   end
 end

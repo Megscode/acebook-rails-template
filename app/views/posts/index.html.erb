@@ -21,7 +21,7 @@
             <h4><%= simple_format(comment.content) %></h4>
             <p>by <span id="email"><%= comment.user.email %></span> at <%= comment.created_at.strftime("%B %d %Y, %l:%M%P")%></p>
             <p><span id="minibtns"><%= link_to "Delete", comment_path(comment), method: :delete, data: {confirm: 'Are you sure?'} %></span></p>
-            <span id=“minibtns”><%= link_to “Update comment”, edit_comment_path(comment) %></span> </p>
+            <span id="minibtns"><%= link_to "Update comment", edit_comment_path(comment) %></span> </p>
       
 
           <% end %>
