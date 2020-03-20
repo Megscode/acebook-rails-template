@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+body
+{ background-repeat: no-repeat;
+  text-align: center;
+  background-color:gainsboro;
+  font-family: 'Montserrat', Verdana, sans-serif;
+}
+
+h3{
+  color: black;
+  font-size: 20px;
+}
+p{
+  
+  font-size: 16px;
+  span { font-style: italic;
+ 
+  }
+ }
+.alert {
+  position: fixed;
+  bottom: 0;
+  color: #0a7451;
+}
+.container {
+  width: 100%;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+#title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar{
+  background: #4A8C6A
+}
+.navbar-brand img{
+  width: auto;
+  height: 35px;
+  overflow: hidden;
+  padding-left: 20px;
+}
+#newpost {
+  display: inline-block
+}
+h5 {
+  margin-top: 1em;
+  padding: 0.4em 0.8em;
+  box-shadow: 1px 1px 10px grey;
+  text-shadow: 1px 1px 10px darkgreen;
+  background:  #4A8C6A;
+  a {color: whitesmoke;};
+}
+
+.logins {
+  display: inline-block;
+  text-align: left;
+  line-height: 2em;
+}
+
+#logostyle {
+float: left;
+font-size: 2em;
+padding-left: 1em;
+font-weight: 600;
+text-shadow: 1px 1px 20px darkgreen;
+color: whitesmoke
+}
+
+.container1 {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  padding-top: 1em;
+  height: 5em
+}
+
+#bannerbuttons {
+  float: right;
+  padding-right: 1em
+}
+
+#posts {
+  margin: 0 auto;
+  border: 1px solid #364958;
+  padding: 1em 5em;
+  width: 50%;
+  #post {
+    text-align: right;
+  }
+  h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #364958;
+    letter-spacing: 1px;
+  }
+  h2 {
+    font-size: 1em
+  }
+  p {
+    text-align: left;
+    font-size: 1em
+  }
+  #email {
+    font-style: italic;
+    color:  #4A8C6A;
+   }
+}
+#comments{ 
+  h2, h4, p { text-align: right }
+  h2 {
+    color: #4A8C6A;
+    font-size: 1.3em;
+    font-weight: 600
+  }
+}
+
+#loggedinas {
+  display: inline-block;
+  font-size: 1.1em;
+  margin-top: 0.5em;
+  #email {
+    font-weight: 600;
+  }
+}
+
+#welcome {
+  background: #4A8C6A;
+  height: 2em;
+  padding-top: 0.5em;
+  color: whitesmoke
+}
+
+#minibtns {
+  margin-top: 0.5em;
+  padding: 0.2em 0.4em;
+  display: inline-block;
+  box-shadow: 1px 1px 4px grey;
+  background:  whitesmoke;
+}

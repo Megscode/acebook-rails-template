@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
     <title>Acebook</title>
     <%= csrf_meta_tags %>
 
@@ -9,7 +17,7 @@
   </head>
 
   <body>
-  <%# <alrt for devise> %>
+  <!--- alert codes for DEVISE --->
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
     <% end %>
@@ -17,7 +25,28 @@
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
 
-   
+ 
+  <!--- Conditional for Showing the navbar --->
+    <% if user_signed_in? %>
+      <nav class="navbar navbar-light bg-light">
+        <div class="container1">
+
+        <h4 id="logostyle">{UNdEFINED}</h4>
+
+        <div id="loggedinas"> Logged in as <span id="email"> <%= current_user.email %> </span></div>
+          
+          <div id="bannerbuttons"><form class="form-inline">
+            <button class="btn btn-outline-success" type="button"><%= link_to posts_path do%> Home feed<% end %></button>
+            <button class="btn btn-outline-secondary" type="button">  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>   </button>
+          </form></div>
+
+        </div>
+      </nav>
+
+    <% end %>
+  <!--- Container for pages --->
+    <div class="container-fluid" id="container">
     <%= yield %>
+    </div>
   </body>
 </html>

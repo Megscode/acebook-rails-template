@@ -1,38 +1,34 @@
 <h2>Your acebook feed</h2>
 
+ <div id="newpost"><h5><%= link_to new_post_path do %>New post<% end %></h5></div>
+
 <div id="posts">
-  <p><%= link_to new_post_path do %>New post<% end %></p>
   <% @posts.each do |post| %>
     <div id="post">
-      <h3>post</h3>
-      <p><%= simple_format(post.message) %></p>
-      <p>created at <%= post.created_at %></p>
-      <p>by <%= post.user.email %></p>
-      <p><%= link_to "Edit this post", edit_post_path(post) %></p>
-      <p><%= link_to "Delete this post", post_path(post), method: :delete, data: {confirm: 'Are you sure?'}, :class => 'btn btn-outline-danger btn-sm' %></p>
-      <p><%= link_to "Add comment", new_comment_path(post) %></p>
-    </div>
+      <h3><%= simple_format(post.message) %></h3>
+      <p>by <span id="email"><%= post.user.email%></span> at <%= post.created_at.strftime("%B %d %Y, %l:%M%P") %></p>
+      <p><span id="minibtns"><%= link_to "Edit this post", edit_post_path(post) %></span>
+      <span id="minibtns"><%= link_to "Delete this post", post_path(post), method: :delete, data: {confirm: 'Are you sure?'}%></span>
+      <span id="minibtns"><%= link_to "Add comment", new_comment_path(post) %></span></p>
+</div>
   
     <div id="comments">
-      <h3>comments</h3>
+      <h2>comments</h2>
       <% @comments.each do |comment| %>
         <div id="comment">
           <% if comment.post_id == post.id %>
-            <p><%= simple_format(comment.content) %></p>
-            <p>by <%= comment.user.email %> at <%= comment.created_at%></p>
-            <p><%= link_to "Delete this comment", comment_path(comment), method: :delete, data: {confirm: 'Are you sure?'}%></p>
-            <p><%= link_to "Update comment", edit_comment_path(comment) %></p>
+
+            <h4><%= simple_format(comment.content) %></h4>
+            <p>by <span id="email"><%= comment.user.email %></span> at <%= comment.created_at.strftime("%B %d %Y, %l:%M%P")%></p>
+            <p><span id="minibtns"><%= link_to "Delete", comment_path(comment), method: :delete, data: {confirm: 'Are you sure?'} %></span></p>
+            <span id="minibtns"><%= link_to "Update comment", edit_comment_path(comment) %></span> </p>
+      
+
           <% end %>
         </div>
       <% end %>
     </div>
+    <hr>
   <% end %>
 </div>
-<br>
-<div>
-  <% if user_signed_in? %>
-    <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
-  <% else %>
-    <%= link_to('Login', new_user_session_path) %>  
-  <% end %>
-</div>
+
