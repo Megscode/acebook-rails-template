@@ -2,13 +2,13 @@
 
 # AceBook  
 
-A clone of a well known posts-based website by team {undefined}. Created as part of Weeks 8&9 at [Makers](https://makers.tech/).
+A clone of a well known posts-based website by team {undefined}. Created as part of Weeks 8 & 9 at [Makers Academy](https://makers.tech/).
 
 ## Usage
 Sign up, sign in and create posts. You will be able to edit and delete your posts (but not ones created by others) using the buttons below each post.
 
 ## Installation
-First, clone this repository. Then:
+First, `git clone` this repository. Then:
 ```bash
 > bundle install
 > rails db:create
@@ -43,9 +43,10 @@ A user can:
 * [x] sign into the platform
 * [x] create a post, edit and delete it
 * [x] see all the posts in reverse chronological order
-* [x] see who wrote each post and when
-* [ ] ...
-* [ ] ...
+* [x] see who wrote each post & when
+* [x] comment on a post
+* [x] edit or delete their comments
+* [x] see who commented & when
 ```
 Under construction...
 ```
