@@ -16,7 +16,9 @@ First, `git clone` this repository. Then:
 > rails server
 ```
 
-Alternately, you can use/view the project on Heroku [here](#nowhere).
+## View
+You can view the project hosted on Heroku [here](https://undefined-acebook.herokuapp.com/).
+<img src="undefined_mockup.jpg" width="700">
 
 ## Technologies:
 - Travis CI   [![Build Status](https://travis-ci.org/Megscode/acebook_undefined.svg?branch=master)](https://travis-ci.org/Megscode/acebook_undefined)
@@ -51,7 +53,7 @@ A user can:
  
 ### Wireframes
 1st wireframe <br>
-<img src="first-wireframe-acebook.png" width="500">
+<img src="first-wireframe-acebook.png" width="700">
 
 ### Project management
 Trello: [Acebook-on-rails](https://trello.com/b/0B2v6FNT/acebook-on-rails)
